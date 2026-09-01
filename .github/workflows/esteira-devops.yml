@@ -63,7 +63,7 @@ jobs:
 
   release:
     name: Release
-    needs: deploy
+    needs: test
     if: startsWith(github.ref, 'refs/tags/v')
     runs-on: ubuntu-latest
     steps:
